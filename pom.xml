@@ -8,5 +8,13 @@
     <artifactId>convolutional-neural-network-genetic-algoritam</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.googlecode.efficient-java-matrix-library</groupId>
+            <artifactId>ejml</artifactId>
+            <version>0.25</version>
+        </dependency>
+
+    </dependencies>
 
 </project>

@@ -14,23 +14,28 @@ public class Program {
 //                new double[]{1, 2, 3}
 //        }));
 
-        DenseMatrix64F w = new DenseMatrix64F(new double[][]{
+        SimpleMatrix w = new SimpleMatrix(new double[][]{
                 new double[]{1, 2, 3},
                 new double[]{4, 5, 6},
                 new double[]{1, 1234245, 9}
         });
 
-        DenseMatrix64F maxes = new DenseMatrix64F(new double[][]{
+        SimpleMatrix maxes = new SimpleMatrix(new double[][]{
                 new double[]{3},
                 new double[]{6},
                 new double[]{1234245}
         });
 
-        DenseMatrix64F res = new DenseMatrix64F();
 
-        CommonOps.sub(w, maxes, res);
+        new SoftmaxLayer().process(w);
 
-        System.out.println(res);
+
+//
+//        DenseMatrix64F res = new DenseMatrix64F();
+//
+//        CommonOps.sub(w, maxes, res);
+//
+//        System.out.println(res);
 
     }
 

@@ -1,4 +1,4 @@
-package com.lukaklacar.convgen;
+package com.lukaklacar.convgen.util;
 
 public class Dimension {
 

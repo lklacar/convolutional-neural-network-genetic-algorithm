@@ -1,4 +1,4 @@
-package com.lukaklacar.convgen;
+package com.lukaklacar.convgen.neuralnetwork.layers;
 
 import com.lukaklacar.convgen.neuralnetwork.activation.ActivationFunction;
 import com.lukaklacar.convgen.neuralnetwork.activation.ReluActivationFunction;

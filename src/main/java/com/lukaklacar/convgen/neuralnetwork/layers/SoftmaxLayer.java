@@ -1,4 +1,4 @@
-package com.lukaklacar.convgen;
+package com.lukaklacar.convgen.neuralnetwork.layers;
 
 import org.ejml.data.DenseMatrix64F;
 import org.ejml.ops.CommonOps;

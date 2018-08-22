@@ -1,5 +1,6 @@
-package com.lukaklacar.convgen;
+package com.lukaklacar.convgen.neuralnetwork.layers;
 
+import com.lukaklacar.convgen.util.Dimension;
 import org.ejml.simple.SimpleMatrix;
 
 public class ConvolutionLayer implements Layer {
@@ -20,11 +21,20 @@ public class ConvolutionLayer implements Layer {
             }
         }
 
+        System.out.println(output);
         return output;
     }
 
     private SimpleMatrix padWithZeros(SimpleMatrix input) {
         SimpleMatrix pad = new SimpleMatrix(this.weights.numCols() + 2, this.weights.numRows() + 2);
         return pad.combine(1, 1, input);
+    }
+
+    public SimpleMatrix getWeights() {
+        return weights;
+    }
+
+    public void setWeights(SimpleMatrix weights) {
+        this.weights = weights;
     }
 }
